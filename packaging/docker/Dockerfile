@@ -1,6 +1,6 @@
 FROM debian:stretch-slim
 
-ARG GRAFANA_TGZ="https://dl.grafana.com/oss/release/grafana-5.4.2.linux-armv7.tar.gz"
+ARG GRAFANA_TGZ="https://dl.grafana.com/oss/release/grafana-6.1.6.linux-armv7.tar.gz"
 
 RUN apt-get update && apt-get install -qq -y tar wget && \
     wget -O /tmp/grafana.tar.gz ${GRAFANA_TGZ} && \
